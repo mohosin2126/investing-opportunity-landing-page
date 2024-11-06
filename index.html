@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <base href="">
-  <base href="">
+  <base href=""> <!-- Keep only one base tag -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -63,6 +62,14 @@
 </head>
 
 <body>
+  <div id="google_translate_element"></div> 
+  <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+      }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
   <div class="wrap">
     <div class="bg"></div>
     <div class="content">
@@ -100,7 +107,7 @@
         <div class="content__s content__s_4">
           Please wait while we determine your eligibility <br>
           Congratulations! You are Eligible! Click the button below to continue <br>
-          <a href="#" target="_blank"><button type="button" class="button">Continue</button></a>
+          <a href="https://chatgpt.com/c/672b8860-bf74-8001-96e5-28cfd817129f" target="_blank"><button type="button" class="button">Continue</button></a>
         </div>
       </div>
     </div>
